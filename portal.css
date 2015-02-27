@@ -1,21 +1,4 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/MTP_ySUJH_bn48VBG8sNSqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
-}
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 /* PART 1 - MAIN LAYOUT BLOCKS
 /* general body - used by main portal document   */
@@ -91,7 +74,7 @@ body.portalBody {
     background: #fff;
     border-top: 2px solid #ddd;
     width: 90%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
 }
 #footerLinks {
     text-align: center;
@@ -109,7 +92,25 @@ body.portalBody {
 #footerLinks li:first-child {
     border: none
 }
-
+.logos_footer{
+    margin: 1em auto;
+    width: 50%;
+}
+.logo_riw{
+    background: transparent url(images/logo_riw.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    margin-right: 2em;
+    height: 30px;
+    width: 100px;
+}
+.logo_unicamp{
+    background: transparent url(images/logo_unicamp.png) 0 0 no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+}
 /* PART 2 - HEADER BLOCKS (BRANDING,LOGIN) */
 #headerMax, #headerMin {
     background: #01A8E0;
