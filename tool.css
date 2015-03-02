@@ -1,9 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
 /* NOTE: This file is linked to after the tool_base.css file inside of tools. It provides for skinning. */
 /* many of the definitions below exist also in tool_base.css - the duplication allows for one instalation with many different looks sharing some common elements
  */
 /* SECTION 1 GENERIC SELECTORS */
 body {
-    font-family: 'Helvetica Neue', Arial,sans-serif;
+    font-family: 'Open Sans', Arial,sans-serif;
     font-size: 80%;
 }
 /* stub in tool_base.css - skinned here */
@@ -471,7 +473,7 @@ see: resources, any legacy list */
 /* see: create any item */
 label {
     color: #000;
-    font-family: 'Helvetica Neue', Arial,sans-serif;
+    /*font-family: 'Helvetica Neue', Arial,sans-serif;*/
     margin-top: .3em;
 }
 /* a required marker for a shorttext label/input pair */
@@ -768,7 +770,7 @@ visibility gets toggled */
 .navPanel {
     background-color: #fff
 }
-/* the default action in this control - keep in mind that anything you do to it (except to the font) will make 
+/* the default action in this control - keep in mind that anything you do to it (except to the font) will make
 you loose the native buttonishness affordance of the os/browser */
 /* create any item - like an announcement */
 .act .active {
